@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <style>
+      /*Class selector*/
+      .red {
+        background-color: red;
+      }
+      /*ID selector*/
+      #green {
+        background-color: green;
+      }
+      /*Element Selector*/
+      DIV {
+        background-color: rgb(4, 0, 255);
+      }
+      /*decendent selector*/
+      div p {
+        color: rgb(150, 60, 60);
+        background-color: rgba(238, 255, 0, 0.986);
+      }
+      /*child selector*/
+      div > p {
+        color: white;
+        background-color: black;
+      }
+      /*universal selector*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*pseudo selector*/
+      a:visited {
+        color: yellow;
+      }
+      a:link {
+        color: greenyellow;
+      }
+      a:active{
+        background-color: violet;
+      }
+      a:hover{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red">I AM DEV</div>
+    <div>
+      2nd div
+      <span>
+        <p>i am div > span > para</p>
+      </span>
+    </div>
+    <div id="green" class="red">
+      I am green one
+      <p>this is the para inside div</p>
+    </div>
+    <pre>
+    <a href="https://www.google.com" _blank>go to google</a>
+    <a href="https://iitj.ac.in" _blank>IITJ</a>
+    </PRE>
+  </body>
+</html>
