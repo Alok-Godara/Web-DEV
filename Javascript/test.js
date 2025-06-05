@@ -1,6 +1,4 @@
-let a = 20
+const gameName = new String("987654321");
 
-let b = Boolean(a)
-
-console.log(typeof b) // boolean
-console.log(b)
+const anotherString = gameName.slice(-5);
+console.log(anotherString); // Output: "hero"
